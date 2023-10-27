@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo{
+    font-size: 44px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+/*---mobile style---*/
+@media(max-width:678px){
+    nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        z-index: 1;
+    }
+    nav.active{
+        display: flex;
+    }
+    nav li{
+        margin: 10px 0;
+        text-align: left;
+        padding: 10px;
+    }
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .menu-toggle{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+/*---hide toggle on pc---*/
+@media(min-width: 769px){
+    .menu-toggle{
+        display: none;
+}
+}
+
+.head-text{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../kyle-johnson-Yi-4X9ZJU6Y-unsplash.jpg);
+    background-size: cover;
+}
+.header-text{
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.header-text h1{
+    font-size: 4em;
+    color: #fff;
+    padding: 10px;
+}
+.header-text p{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px;
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+}
+.about h1{
+    font-size: 5em;
+    text-align: left;
+}
+.about p{
+    font-size: 1.2em;
+    line-height: 43px;
+}
+.about-col{
+    flex-basis: 60%;
+}
+.about .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-col img{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.counters{
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+}
+.counters .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    text-align: center;
+}
+
+
+
+.contact{
+    width: 80%;
+    margin: auto;
+}
+.contact h1{
+    font-size: 5em;
+    text-align: left;
+}
+.contact p{
+    font-size: 1.2em;
+    line-height: 43px;
+}
+.contact-col{
+    flex-basis: 60%;
+}
+.contact .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-col img{
+    width: 100%;
+    margin-bottom: 60px;
+}
+.contact-col input{
+    width: 100%;
+    margin: 10px 30px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+.btn{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 30px;
+    text-decoration: none;
+}
+
+.footer{
+    background-color: #333;
+    padding: 15px;
+}
+.footer p{
+    text-align: center;
+    color: #fff;
+}
